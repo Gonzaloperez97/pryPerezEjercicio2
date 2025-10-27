@@ -14,7 +14,7 @@ namespace pryPerezEjercicio2
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
