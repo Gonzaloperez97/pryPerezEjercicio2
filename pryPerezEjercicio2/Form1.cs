@@ -31,8 +31,36 @@ namespace pryPerezEjercicio2
 
             // --- Aquí haremos los cálculos ---
 
+            // 2. Calcular la distancia total
+            double distanciaTotal = distancia * 2;
 
+            // 3. Calcular el precio base
+            double precioBase = distanciaTotal * 5;
 
+            // 4. Decidir el precio final
+            double precioFinal; // Creamos la variable "vacía"
+
+            // ¡La condición!
+            if (dias >= 7 && distancia >= 100)
+            {
+                // CAMINO CON DESCUENTO:
+                // El precio final es el precio base menos el 50% (o sea, multiplicado por 0.5)
+                precioFinal = precioBase * 0.5;
+            }
+            else
+            {
+                // CAMINO SIN DESCUENTO:
+                // El precio final es simplemente el precio base
+                precioFinal = precioBase;
+            }
+
+            // 5. Mostrar el resultado
+            // El 'ToString("C")' formatea el número como moneda (ej: "$ 55,00")
+            MessageBox.Show("El precio total de su boleto (ida y vuelta) es: " + precioFinal.ToString("C"));
         }
+
+
+
     }
 }
+
