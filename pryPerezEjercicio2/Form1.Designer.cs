@@ -110,6 +110,7 @@
             Controls.Add(lblDistancia);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Boletos Ferro";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)nudCantidad).EndInit();
